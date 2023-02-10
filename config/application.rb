@@ -15,7 +15,7 @@ module TaskApp
       g.assets false            #css,JavaScriptファイル生成せず
       g.test_framework :rspec   #testファイル生成せず
       g.controller_specs false  #specs_controller生成せず
-      f.view_specs false        #specs_view生成せず
+      g.view_specs false        #specs_view生成せず
     end
   end
 end
