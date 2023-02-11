@@ -5,6 +5,7 @@
         <th scope="col">Title</th>
         <th scope="col">Content</th>
         <th scope="col">Created_at</th>
+        <th scope="col">Show</th>
       </tr>
     </thead>
     <tbody>
@@ -13,6 +14,7 @@
           <td><%= task.title %></td>
           <td><%= task.content %></td>
           <td><%= task.created_at%></td>
+          <td><%= link_to "詳細", task_path(task.id)%></td>
         </tr>   
       <% end %>
     </tbody>
